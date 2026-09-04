@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-04 04:30:39",
+    "update_time": "2026-09-04 05:12:39",
     "data": {
         "5": {
             "status": "scored",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "40": {
-            "status": "unknown",
+            "status": "queued",
             "comment": "",
             "team_name": "croissant",
             "type": "Task3",
@@ -254,7 +254,7 @@
             "final_submission": "No"
         },
         "41": {
-            "status": "unknown",
+            "status": "queued",
             "comment": "",
             "team_name": "Tryer",
             "type": "Task3",
