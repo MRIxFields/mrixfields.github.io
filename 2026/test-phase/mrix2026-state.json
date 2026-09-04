@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-04 05:23:18",
+    "update_time": "2026-09-04 07:59:40",
     "data": {
         "5": {
             "status": "scored",
@@ -128,7 +128,7 @@
             "final_submission": "No"
         },
         "27": {
-            "status": "scored",
+            "status": "infered",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task1",
@@ -183,7 +183,7 @@
         },
         "33": {
             "status": "scored",
-            "comment": "",
+            "comment": "Failed, email sent",
             "team_name": "Team Blue Tent",
             "type": "Task3",
             "submit_time": "2026-08-29 16:43:44",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "40": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "croissant",
             "type": "Task3",
@@ -253,23 +253,23 @@
             "is_latest": true,
             "final_submission": "No"
         },
-        "41": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "Tryer",
-            "type": "Task3",
-            "submit_time": "2026-09-03 14:16:46",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "42": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "croissant",
             "type": "Task2",
             "submit_time": "2026-09-03 18:13:38",
             "is_latest": true,
             "final_submission": "No"
+        },
+        "43": {
+            "status": "infering",
+            "comment": "",
+            "team_name": "Tryer",
+            "type": "Task3",
+            "submit_time": "2026-09-04 12:30:12",
+            "is_latest": true,
+            "final_submission": "Yes"
         }
     }
 }
