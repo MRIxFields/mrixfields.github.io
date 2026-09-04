@@ -1,0 +1,333 @@
+<!--
+dashboard.html：展示 dashboard.json 与 mrix2026-state.json 中的比赛评测状态。
+
+页面通过 fetch 加载同目录的 dashboard.json（meta 信息 + content 字段指向状态数据文件，
+如 ./mrix2026-state.json），再加载 content 指向的文件（由 test_gather_result.py 生成），
+渲染出评测进度看板。数据刷新后刷新页面（或等待自动刷新）即可看到最新结果，无需重新生成本文件。
+
+注意：需通过 HTTP 服务访问（如 python3 -m http.server 8080），
+直接以 file:// 打开时浏览器会拦截跨文件 fetch 导致无法加载数据。
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status Dashboard</title>
+<style>
+:root {
+  --bg: #0f172a; --panel: #172033; --line: #263248; --fg: #e2e8f0; --muted: #94a3b8;
+  --accent: #38bdf8; --danger: #f87171;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 28px 20px 48px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+.sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+.banner { display: none; margin-bottom: 16px; padding: 10px 14px; border-radius: 8px; font-size: 13px;
+  background: rgba(239,68,68,.12); border: 1px solid rgba(239,68,68,.35); color: var(--danger); }
+.banner.show { display: block; }
+.cards { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.card { flex: 1 1 130px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.card .num { font-size: 26px; font-weight: 600; }
+.card .label { color: var(--muted); font-size: 12px; text-transform: capitalize; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+.toolbar input, .toolbar select { background: var(--panel); border: 1px solid var(--line); color: var(--fg);
+  border-radius: 8px; padding: 8px 10px; font-size: 13px; }
+.toolbar input { min-width: 220px; }
+.toolbar button { background: var(--panel); border: 1px solid var(--line); color: var(--fg); border-radius: 8px;
+  padding: 8px 12px; font-size: 13px; cursor: pointer; }
+.toolbar button:hover { border-color: var(--accent); }
+.spacer { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; overflow: hidden; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { background: #1c2740; color: var(--muted); font-weight: 600; cursor: pointer; user-select: none; }
+th.sort-asc::after { content: " \2191"; color: var(--accent); }
+th.sort-desc::after { content: " \2193"; color: var(--accent); }
+tbody tr:hover { background: #1f2b45; }
+tbody tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; }
+.badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; border: 1px solid transparent; }
+.badge.scored { background: rgba(34,197,94,.15); color: #4ade80; border-color: rgba(34,197,94,.35); }
+.badge.infering { background: rgba(167,139,250,.15); color: #c4b5fd; border-color: rgba(167,139,250,.35); }
+.badge.infered { background: rgba(250,204,21,.12); color: #fde047; border-color: rgba(250,204,21,.3); }
+.badge.notified { background: rgba(34,197,94,.15); color: #4ade80; border-color: rgba(34,197,94,.35); }
+.badge.failed { background: rgba(239,68,68,.15); color: #fca5a5; border-color: rgba(239,68,68,.35); }
+.badge.queued { background: rgba(148,163,184,.14); color: #cbd5e1; border-color: rgba(148,163,184,.3); }
+.badge.unknown, .badge.generic { background: rgba(148,163,184,.14); color: #cbd5e1; border-color: rgba(148,163,184,.3); }
+.tag { display: inline-block; padding: 1px 8px; border-radius: 6px; font-size: 12px; background: rgba(148,163,184,.14); color: var(--muted); }
+.tag.yes { background: rgba(34,197,94,.12); color: #4ade80; }
+.comment { color: var(--muted); max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+.team { font-weight: 600; }
+.empty { padding: 28px; text-align: center; color: var(--muted); }
+.muted { color: var(--muted); }
+footer { margin-top: 18px; color: var(--muted); font-size: 12px; display: flex; gap: 14px; flex-wrap: wrap; }
+#updated { color: var(--muted); }
+@media (max-width: 720px) { th, td { padding: 8px; } .toolbar input { min-width: 100%; } .spacer { margin-left: 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 id="title">Status Dashboard</h1>
+  <div class="sub" id="subtitle">Loading dashboard.json …</div>
+
+  <div class="banner" id="banner"></div>
+  <div class="cards" id="cards"></div>
+
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Search uid / team_name / type">
+    <select id="type"><option value="">All types</option></select>
+    <select id="status"><option value="">All statuses</option></select>
+    <div class="spacer">
+      <span class="muted" id="updated"></span>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="num" data-key="uid">uid</th>
+        <th data-key="team_name">team_name</th>
+        <th data-key="type">type</th>
+        <th data-key="submit_time">submit_time</th>
+        <th data-key="final_submission">final_submission</th>
+        <th data-key="status">status</th>
+        <th data-key="comment">comment</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <div class="empty" id="empty" hidden>No matching records</div>
+
+  <footer>
+    <span id="source"></span>
+    <span>Auto refresh every 60s</span>
+  </footer>
+</div>
+
+<script>
+// 各状态徽章的样式 class（其余状态回退到 generic）
+function statusClass(s) {
+  const v = String(s == null ? '' : s).toLowerCase();
+  if (!v) return 'unknown';
+  if (/fail|error|invalid|reject/.test(v)) return 'failed';
+  if (['scored', 'notified', 'success', 'passed'].includes(v)) return 'scored';
+  if (v === 'infering' || v === 'inferring' || v === 'scoring') return 'infering';
+  if (v === 'infered' || v === 'awaiting score') return 'infered';
+  if (v === 'queued' || v === 'pending') return 'queued';
+  return 'generic';
+}
+// 可读的状态文案（未识别状态保留原文）
+const LABELS = { scored: 'Scored', infering: 'Inferring', infered: 'Awaiting score',
+                 notified: 'Notified', unknown: 'Unknown', failed: 'Failed', queued: 'Queued' };
+function statusLabel(s) {
+  const v = String(s == null ? '' : s);
+  const key = v.toLowerCase();
+  return (LABELS[key] || v || 'Unknown');
+}
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
+}
+function showBanner(msg) {
+  const el = document.getElementById('banner');
+  el.textContent = msg;
+  el.classList.toggle('show', Boolean(msg));
+}
+
+const state = { meta: {}, rows: [], type: null, sortKey: 'uid', sortAsc: true };
+
+function refreshNow() { loadAll(); }
+
+async function loadAll() {
+  try {
+    // 1) 读取 dashboard.json（meta 信息 + content 指向状态数据文件）
+    const dashResp = await fetch('./dashboard.json', { cache: 'no-store' });
+    if (!dashResp.ok) throw new Error('dashboard.json 加载失败：HTTP ' + dashResp.status);
+    const dash = await dashResp.json();
+    state.meta = (dash && dash.meta) || {};
+    const content = dash && dash.content;
+    if (!content) throw new Error('dashboard.json 缺少 content 字段');
+
+    // 2) 读取 content 指向的状态数据文件（支持单个路径或路径数组）
+    const targets = Array.isArray(content) ? content : [content];
+    const all = [];
+    for (const t of targets) {
+      const resp = await fetch(t, { cache: 'no-store' });
+      if (!resp.ok) throw new Error('数据文件 ' + t + ' 加载失败：HTTP ' + resp.status);
+      const data = await resp.json();
+      all.push({ path: t, data: data || {} });
+    }
+    renderAll(all);
+  } catch (err) {
+    showBanner('加载失败：' + err.message + '（请通过 HTTP 服务访问本页面，如 python3 -m http.server）');
+    document.getElementById('subtitle').textContent = 'Dashboard unavailable';
+  }
+}
+
+function rowsOf(uid, entry) {
+  return {
+    uid: String(uid),
+    team_name: entry.team_name || '-',
+    type: entry.type || '-',
+    submit_time: entry.submit_time || '-',
+    final_submission: entry.final_submission || '-',
+    status: entry.status || 'unknown',
+    comment: entry.comment || '',
+    is_latest: entry.is_latest,
+  };
+}
+
+function renderAll(sources) {
+  const title = state.meta.name || 'Status Dashboard';
+  document.getElementById('title').textContent = title + ' Status Dashboard';
+  const updateTimes = sources.map(function (s) {
+    return s.data && s.data.update_time ? String(s.data.update_time) : null;
+  }).filter(Boolean);
+  const total = sources.reduce(function (n, s) { return n + Object.keys(s.data.data || {}).length; }, 0);
+
+  // 汇总多个数据文件的条目（content 为数组时合并展示）
+  state.rows = [];
+  sources.forEach(function (s) {
+    const data = s.data.data || {};
+    Object.keys(data).forEach(function (uid) { state.rows.push(rowsOf(uid, data[uid] || {})); });
+  });
+  state.rows.sort(function (a, b) { return (+a.uid || 0) - (+b.uid || 0); });
+
+  const subtitleBits = [];
+  if (updateTimes.length) subtitleBits.push('updated at ' + updateTimes.join(', '));
+  subtitleBits.push(total + ' submissions');
+  document.getElementById('subtitle').textContent = subtitleBits.join(' · ');
+  document.getElementById('updated').textContent = 'last updated: ' + new Date().toLocaleTimeString();
+  document.getElementById('source').textContent = 'Sources: ' + sources.map(function (s) {
+    return s.path + (s.data && s.data.data ? ' (' + Object.keys(s.data.data).length + ')' : '');
+  }).join(' · ');
+  showBanner('');
+
+  renderCards(total);
+  renderTypeOptions();
+  renderStatusOptions();
+  render();
+}
+
+// 状态展示顺序（其余状态按出现顺序排在后面）
+const STATUS_ORDER = ['scored', 'notified', 'infering', 'infered', 'queued', 'failed', 'unknown'];
+
+function renderCards(total) {
+  const counts = {};
+  state.rows.forEach(function (r) { counts[r.status] = (counts[r.status] || 0) + 1; });
+  const keys = STATUS_ORDER.filter(function (k) { return counts[k] !== undefined; })
+    .concat(Object.keys(counts).filter(function (k) { return STATUS_ORDER.indexOf(k) < 0; }));
+  const cards = [{ key: '', label: 'Total', value: total }];
+  keys.forEach(function (k) {
+    cards.push({ key: k, label: statusLabel(k), value: counts[k] });
+  });
+  document.getElementById('cards').innerHTML = cards.map(function (c) {
+    return '<div class="card"><div class="num">' + c.value + '</div>'
+      + '<div class="label">' + esc(c.label) + (c.key === '' ? '' : ' · ' + esc(c.key)) + '</div></div>';
+  }).join('');
+}
+
+function addOption(sel, value, label) {
+  const o = document.createElement('option');
+  o.value = value; o.textContent = label;
+  sel.appendChild(o);
+}
+
+function renderTypeOptions() {
+  const sel = document.getElementById('type');
+  const prev = state.type;
+  sel.innerHTML = '<option value="">All types</option>';
+  Array.from(new Set(state.rows.map(function (r) { return r.type; }))).sort().forEach(function (t) {
+    addOption(sel, t, t);
+  });
+  if (prev && Array.from(sel.options).some(function (o) { return o.value === prev; })) sel.value = prev;
+  else state.type = '';
+}
+
+function renderStatusOptions() {
+  const sel = document.getElementById('status');
+  const prev = sel.value;
+  sel.innerHTML = '<option value="">All statuses</option>';
+  const keys = STATUS_ORDER.filter(function (k) {
+    return state.rows.some(function (r) { return r.status === k; });
+  }).concat(Array.from(new Set(state.rows.map(function (r) { return r.status; })))
+    .filter(function (k) { return STATUS_ORDER.indexOf(k) < 0; }));
+  keys.forEach(function (k) { addOption(sel, k, statusLabel(k)); });
+  if (prev && Array.from(sel.options).some(function (o) { return o.value === prev; })) sel.value = prev;
+}
+
+function currentRows() {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const type = document.getElementById('type').value;
+  const status = document.getElementById('status').value;
+  const rows = state.rows.filter(function (r) {
+    if (type && r.type !== type) return false;
+    if (status && r.status !== status) return false;
+    if (!q) return true;
+    return r.uid.indexOf(q) >= 0
+      || r.team_name.toLowerCase().indexOf(q) >= 0
+      || r.type.toLowerCase().indexOf(q) >= 0
+      || r.comment.toLowerCase().indexOf(q) >= 0;
+  });
+  rows.sort(function (a, b) {
+    let x = a[state.sortKey], y = b[state.sortKey];
+    if (state.sortKey === 'uid') { x = +a.uid || 0; y = +b.uid || 0; }
+    else { x = String(x || '').toLowerCase(); y = String(y || '').toLowerCase(); }
+    if (x < y) return state.sortAsc ? -1 : 1;
+    if (x > y) return state.sortAsc ? 1 : -1;
+    return (+a.uid || 0) - (+b.uid || 0);
+  });
+  return rows;
+}
+
+function render() {
+  const rows = currentRows();
+  document.getElementById('rows').innerHTML = rows.map(function (r) {
+    const comment = r.comment ? '<span class="comment" title="' + esc(r.comment) + '">' + esc(r.comment) + '</span>' : '<span class="muted">-</span>';
+    return '<tr>'
+      + '<td class="num">' + esc(r.uid) + '</td>'
+      + '<td class="team">' + esc(r.team_name) + '</td>'
+      + '<td>' + esc(r.type) + '</td>'
+      + '<td class="muted">' + esc(r.submit_time) + '</td>'
+      + '<td><span class="tag' + (String(r.final_submission).toLowerCase() === 'yes' ? ' yes' : '') + '">'
+      + esc(r.final_submission) + '</span></td>'
+      + '<td><span class="badge ' + statusClass(r.status) + '">' + esc(statusLabel(r.status)) + '</span></td>'
+      + '<td>' + comment + '</td>'
+      + '</tr>';
+  }).join('');
+  document.getElementById('empty').hidden = rows.length > 0;
+  document.querySelectorAll('th[data-key]').forEach(function (th) {
+    th.classList.toggle('sort-asc', th.dataset.key === state.sortKey && state.sortAsc);
+    th.classList.toggle('sort-desc', th.dataset.key === state.sortKey && !state.sortAsc);
+  });
+}
+
+function boot() {
+  document.querySelectorAll('th[data-key]').forEach(function (th) {
+    th.addEventListener('click', function () {
+      const key = th.dataset.key;
+      if (state.sortKey === key) state.sortAsc = !state.sortAsc;
+      else { state.sortKey = key; state.sortAsc = key === 'uid'; }
+      render();
+    });
+  });
+  document.getElementById('type').addEventListener('change', render);
+  document.getElementById('status').addEventListener('change', render);
+  document.getElementById('q').addEventListener('input', render);
+  document.getElementById('refresh').addEventListener('click', refreshNow);
+  // 数据更新后自动刷新（页面可见时每 60s 重新拉取）
+  setInterval(function () { if (!document.hidden) loadAll(); }, 60000);
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) loadAll();
+  });
+  loadAll();
+}
+
+boot();
+</script>
+</body>
+</html>

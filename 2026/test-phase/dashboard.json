@@ -1,0 +1,7 @@
+{
+    "meta": {
+        "name": "MRIx2026",
+        "description": "meta节点下的是固定信息，不要更新"
+    },
+    "content": "./mrix2026-state.json"
+}

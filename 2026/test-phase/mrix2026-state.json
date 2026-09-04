@@ -1,0 +1,275 @@
+{
+    "update_time": "2026-09-04 04:30:39",
+    "data": {
+        "5": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "winner",
+            "type": "Task1",
+            "submit_time": "2026-07-20 19:36:52",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "6": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task2",
+            "submit_time": "2026-08-07 21:15:31",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "10": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "CoffeeField",
+            "type": "Task2",
+            "submit_time": "2026-08-20 00:41:35",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "11": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "starfighting",
+            "type": "Task1",
+            "submit_time": "2026-08-20 11:52:13",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "12": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "starfighting",
+            "type": "Task2",
+            "submit_time": "2026-08-20 11:53:09",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "13": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "starfighting",
+            "type": "Task3",
+            "submit_time": "2026-08-20 11:53:52",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "15": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "darus-cop",
+            "type": "Task3",
+            "submit_time": "2026-08-21 16:26:24",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "16": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "qiangqiangqiang",
+            "type": "Task3",
+            "submit_time": "2026-08-22 21:00:54",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "17": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "simoth-cop",
+            "type": "Task3",
+            "submit_time": "2026-08-23 14:54:31",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "18": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Wdebdt-cop",
+            "type": "Task3",
+            "submit_time": "2026-08-23 14:55:52",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "19": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "MRIxFields2026-VICOROB",
+            "type": "Task1",
+            "submit_time": "2026-08-23 23:29:20",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "20": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "MRIxFields2026-VICOROB",
+            "type": "Task2",
+            "submit_time": "2026-08-23 23:32:35",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "21": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "MRIxFields2026-VICOROB",
+            "type": "Task3",
+            "submit_time": "2026-08-23 23:32:42",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "26": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task3",
+            "submit_time": "2026-08-25 09:49:42",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "27": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Team Blue Tent",
+            "type": "Task1",
+            "submit_time": "2026-08-26 01:26:55",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "28": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "MICLab",
+            "type": "Task2",
+            "submit_time": "2026-08-26 04:38:06",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "29": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "SSPH",
+            "type": "Task1",
+            "submit_time": "2026-08-27 19:54:55",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "30": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "SSPH",
+            "type": "Task2",
+            "submit_time": "2026-08-27 19:55:53",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "31": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "SSPH",
+            "type": "Task3",
+            "submit_time": "2026-08-27 19:56:50",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "32": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Team Blue Tent",
+            "type": "Task2",
+            "submit_time": "2026-08-29 16:42:42",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "33": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Team Blue Tent",
+            "type": "Task3",
+            "submit_time": "2026-08-29 16:43:44",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "34": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "ShanghaiTech",
+            "type": "Task1",
+            "submit_time": "2026-08-29 18:04:55",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "35": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "YYYYYY",
+            "type": "Task3",
+            "submit_time": "2026-08-31 14:46:18",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "36": {
+            "status": "infering",
+            "comment": "",
+            "team_name": "Paris Baguette",
+            "type": "Task1",
+            "submit_time": "2026-09-02 17:41:16",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "37": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Lzu_LastDance",
+            "type": "Task1",
+            "submit_time": "2026-09-02 21:52:32",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "38": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Lzu_LastDance",
+            "type": "Task2",
+            "submit_time": "2026-09-02 21:53:37",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "39": {
+            "status": "scored",
+            "comment": "",
+            "team_name": "Lzu_LastDance",
+            "type": "Task3",
+            "submit_time": "2026-09-02 21:54:17",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "40": {
+            "status": "unknown",
+            "comment": "",
+            "team_name": "croissant",
+            "type": "Task3",
+            "submit_time": "2026-09-03 14:06:16",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "41": {
+            "status": "unknown",
+            "comment": "",
+            "team_name": "Tryer",
+            "type": "Task3",
+            "submit_time": "2026-09-03 14:16:46",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "42": {
+            "status": "infering",
+            "comment": "",
+            "team_name": "croissant",
+            "type": "Task2",
+            "submit_time": "2026-09-03 18:13:38",
+            "is_latest": true,
+            "final_submission": "No"
+        }
+    }
+}
