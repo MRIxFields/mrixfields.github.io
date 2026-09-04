@@ -5,7 +5,12 @@ dashboard.html：展示 dashboard.json 与 mrix2026-state.json 中的比赛评�
 如 ./mrix2026-state.json），再加载 content 指向的文件（由 test_gather_result.py 生成），
 渲染出评测进度看板。数据刷新后刷新页面（或等待自动刷新）即可看到最新结果，无需重新生成本文件。
 
-注意：需通过 HTTP 服务访问（如 python3 -m http.server 8080），
+布局适配：
+- 桌面端（> 720px）：完整表格，点击列头排序；
+- 移动端（<= 720px）：表格自动切换为卡片式行（状态徽章醒目置顶），搜索/类型/状态过滤保留，
+  排序通过专用下拉框完成，避免横向滚动整页。
+
+注意：需通过 HTTP 服务访问（GitHub Pages / python3 -m http.server 均可），
 直接以 file:// 打开时浏览器会拦截跨文件 fetch 导致无法加载数据。
 -->
 <!DOCTYPE html>
@@ -13,40 +18,50 @@ dashboard.html：展示 dashboard.json 与 mrix2026-state.json 中的比赛评�
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f172a">
 <title>Status Dashboard</title>
 <style>
 :root {
   --bg: #0f172a; --panel: #172033; --line: #263248; --fg: #e2e8f0; --muted: #94a3b8;
-  --accent: #38bdf8; --danger: #f87171;
+  --accent: #38bdf8; --danger: #f87171; --radius: 10px;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
 .wrap { max-width: 1240px; margin: 0 auto; padding: 28px 20px 48px; }
 h1 { font-size: 22px; margin: 0 0 6px; }
-.sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+.sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; word-break: break-word; }
 .banner { display: none; margin-bottom: 16px; padding: 10px 14px; border-radius: 8px; font-size: 13px;
-  background: rgba(239,68,68,.12); border: 1px solid rgba(239,68,68,.35); color: var(--danger); }
+  background: rgba(239,68,68,.12); border: 1px solid rgba(239,68,68,.35); color: var(--danger); word-break: break-word; }
 .banner.show { display: block; }
+
+/* 统计卡片 */
 .cards { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
-.card { flex: 1 1 130px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
-.card .num { font-size: 26px; font-weight: 600; }
-.card .label { color: var(--muted); font-size: 12px; text-transform: capitalize; }
+.card { flex: 1 1 130px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card .num { font-size: 26px; font-weight: 600; line-height: 1.2; }
+.card .label { color: var(--muted); font-size: 12px; }
+
+/* 工具栏 */
 .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
 .toolbar input, .toolbar select { background: var(--panel); border: 1px solid var(--line); color: var(--fg);
-  border-radius: 8px; padding: 8px 10px; font-size: 13px; }
-.toolbar input { min-width: 220px; }
+  border-radius: 8px; padding: 8px 10px; font-size: 13px; min-height: 36px; }
+.toolbar input { min-width: 220px; flex: 1 1 220px; }
+.toolbar select { cursor: pointer; }
 .toolbar button { background: var(--panel); border: 1px solid var(--line); color: var(--fg); border-radius: 8px;
-  padding: 8px 12px; font-size: 13px; cursor: pointer; }
-.toolbar button:hover { border-color: var(--accent); }
+  padding: 8px 14px; font-size: 13px; min-height: 36px; cursor: pointer; }
+.toolbar button:hover, .toolbar button:active { border-color: var(--accent); }
+.mobile-only { display: none; }
 .spacer { margin-left: auto; display: flex; gap: 10px; align-items: center; }
-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line);
-  border-radius: 10px; overflow: hidden; }
+
+/* 表格（桌面端，宽表时内部横向滚动，不撑破页面） */
+.table-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); -webkit-overflow-scrolling: touch; }
+table { width: 100%; border-collapse: collapse; min-width: 760px; }
 th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+tbody tr:last-child td { border-bottom: none; }
 th { background: #1c2740; color: var(--muted); font-weight: 600; cursor: pointer; user-select: none; }
 th.sort-asc::after { content: " \2191"; color: var(--accent); }
 th.sort-desc::after { content: " \2193"; color: var(--accent); }
 tbody tr:hover { background: #1f2b45; }
-tbody tr:last-child td { border-bottom: none; }
 td.num, th.num { text-align: right; }
 .badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; border: 1px solid transparent; }
 .badge.scored { background: rgba(34,197,94,.15); color: #4ade80; border-color: rgba(34,197,94,.35); }
@@ -62,9 +77,53 @@ td.num, th.num { text-align: right; }
 .team { font-weight: 600; }
 .empty { padding: 28px; text-align: center; color: var(--muted); }
 .muted { color: var(--muted); }
-footer { margin-top: 18px; color: var(--muted); font-size: 12px; display: flex; gap: 14px; flex-wrap: wrap; }
+footer { margin-top: 18px; color: var(--muted); font-size: 12px; display: flex; gap: 8px 14px; flex-wrap: wrap; }
 #updated { color: var(--muted); }
-@media (max-width: 720px) { th, td { padding: 8px; } .toolbar input { min-width: 100%; } .spacer { margin-left: 0; } }
+
+/* 移动端：卡片式行布局 */
+@media (max-width: 720px) {
+  .wrap { padding: 18px 12px 36px; }
+  h1 { font-size: 19px; }
+  .sub { margin-bottom: 14px; }
+  .cards { gap: 8px; }
+  .card { flex: 1 1 42%; padding: 10px 12px; }
+  .card .num { font-size: 22px; }
+
+  .toolbar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .toolbar input, .toolbar select { font-size: 16px; width: 100%; min-height: 42px; }
+  #q { grid-column: 1 / -1; }
+  .mobile-only { display: block; grid-column: 1 / -1; }
+  .spacer { grid-column: 1 / -1; margin-left: 0; justify-content: space-between; }
+  .spacer span { font-size: 12px; }
+
+  /* 表格 → 卡片列表：状态徽章置顶右对齐，其余字段成行展示 */
+  .table-wrap { overflow: visible; border: none; background: none; border-radius: 0; }
+  table { min-width: 0; }
+  thead { display: none; }
+  tbody { display: grid; gap: 10px; }
+  tr {
+    display: grid; gap: 4px 10px; align-items: center; background: var(--panel);
+    border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "uid team status"
+      "type final ."
+      "time time time"
+      "note note note";
+  }
+  tr:hover { background: var(--panel); }
+  td { border-bottom: none; padding: 0; white-space: normal; overflow-wrap: anywhere; }
+  td.num { text-align: left; font-size: 12px; color: var(--muted); }
+  td::before { content: attr(data-label); color: var(--muted); font-size: 11px; margin-right: 6px; }
+  td:nth-child(1) { grid-area: uid; }
+  td:nth-child(2) { grid-area: team; font-weight: 600; line-height: 1.35; }
+  td:nth-child(3) { grid-area: type; }
+  td:nth-child(4) { grid-area: time; font-size: 12px; color: var(--muted); }
+  td:nth-child(5) { grid-area: final; text-align: right; }
+  td:nth-child(6) { grid-area: status; text-align: right; }
+  td:nth-child(7) { grid-area: note; font-size: 12px; }
+  .comment { max-width: none; }
+}
 </style>
 </head>
 <body>
@@ -79,26 +138,35 @@ footer { margin-top: 18px; color: var(--muted); font-size: 12px; display: flex; 
     <input id="q" type="search" placeholder="Search uid / team_name / type">
     <select id="type"><option value="">All types</option></select>
     <select id="status"><option value="">All statuses</option></select>
+    <select id="sort" class="mobile-only" aria-label="Sort by">
+      <option value="uid">Sort: uid</option>
+      <option value="team_name">Sort: team_name</option>
+      <option value="type">Sort: type</option>
+      <option value="submit_time">Sort: submit_time</option>
+      <option value="status">Sort: status</option>
+    </select>
     <div class="spacer">
       <span class="muted" id="updated"></span>
       <button id="refresh" type="button">Refresh</button>
     </div>
   </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th class="num" data-key="uid">uid</th>
-        <th data-key="team_name">team_name</th>
-        <th data-key="type">type</th>
-        <th data-key="submit_time">submit_time</th>
-        <th data-key="final_submission">final_submission</th>
-        <th data-key="status">status</th>
-        <th data-key="comment">comment</th>
-      </tr>
-    </thead>
-    <tbody id="rows"></tbody>
-  </table>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="num" data-key="uid">uid</th>
+          <th data-key="team_name">team_name</th>
+          <th data-key="type">type</th>
+          <th data-key="submit_time">submit_time</th>
+          <th data-key="final_submission">final_submission</th>
+          <th data-key="status">status</th>
+          <th data-key="comment">comment</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
   <div class="empty" id="empty" hidden>No matching records</div>
 
   <footer>
@@ -138,9 +206,7 @@ function showBanner(msg) {
   el.classList.toggle('show', Boolean(msg));
 }
 
-const state = { meta: {}, rows: [], type: null, sortKey: 'uid', sortAsc: true };
-
-function refreshNow() { loadAll(); }
+const state = { meta: {}, rows: [], sortKey: 'uid', sortAsc: true };
 
 async function loadAll() {
   try {
@@ -163,7 +229,7 @@ async function loadAll() {
     }
     renderAll(all);
   } catch (err) {
-    showBanner('加载失败：' + err.message + '（请通过 HTTP 服务访问本页面，如 python3 -m http.server）');
+    showBanner('加载失败：' + err.message + '（请通过 HTTP 服务访问本页面）');
     document.getElementById('subtitle').textContent = 'Dashboard unavailable';
   }
 }
@@ -184,6 +250,7 @@ function rowsOf(uid, entry) {
 function renderAll(sources) {
   const title = state.meta.name || 'Status Dashboard';
   document.getElementById('title').textContent = title + ' Status Dashboard';
+  document.title = title + ' Status Dashboard';
   const updateTimes = sources.map(function (s) {
     return s.data && s.data.update_time ? String(s.data.update_time) : null;
   }).filter(Boolean);
@@ -201,7 +268,7 @@ function renderAll(sources) {
   if (updateTimes.length) subtitleBits.push('updated at ' + updateTimes.join(', '));
   subtitleBits.push(total + ' submissions');
   document.getElementById('subtitle').textContent = subtitleBits.join(' · ');
-  document.getElementById('updated').textContent = 'last updated: ' + new Date().toLocaleTimeString();
+  document.getElementById('updated').textContent = 'last updated ' + new Date().toLocaleTimeString();
   document.getElementById('source').textContent = 'Sources: ' + sources.map(function (s) {
     return s.path + (s.data && s.data.data ? ' (' + Object.keys(s.data.data).length + ')' : '');
   }).join(' · ');
@@ -221,13 +288,13 @@ function renderCards(total) {
   state.rows.forEach(function (r) { counts[r.status] = (counts[r.status] || 0) + 1; });
   const keys = STATUS_ORDER.filter(function (k) { return counts[k] !== undefined; })
     .concat(Object.keys(counts).filter(function (k) { return STATUS_ORDER.indexOf(k) < 0; }));
-  const cards = [{ key: '', label: 'Total', value: total }];
+  const cards = [{ label: 'Total', value: total }];
   keys.forEach(function (k) {
-    cards.push({ key: k, label: statusLabel(k), value: counts[k] });
+    cards.push({ label: statusLabel(k), value: counts[k] });
   });
   document.getElementById('cards').innerHTML = cards.map(function (c) {
     return '<div class="card"><div class="num">' + c.value + '</div>'
-      + '<div class="label">' + esc(c.label) + (c.key === '' ? '' : ' · ' + esc(c.key)) + '</div></div>';
+      + '<div class="label">' + esc(c.label) + '</div></div>';
   }).join('');
 }
 
@@ -239,13 +306,12 @@ function addOption(sel, value, label) {
 
 function renderTypeOptions() {
   const sel = document.getElementById('type');
-  const prev = state.type;
+  const prev = sel.value;
   sel.innerHTML = '<option value="">All types</option>';
   Array.from(new Set(state.rows.map(function (r) { return r.type; }))).sort().forEach(function (t) {
     addOption(sel, t, t);
   });
   if (prev && Array.from(sel.options).some(function (o) { return o.value === prev; })) sel.value = prev;
-  else state.type = '';
 }
 
 function renderStatusOptions() {
@@ -287,16 +353,21 @@ function currentRows() {
 function render() {
   const rows = currentRows();
   document.getElementById('rows').innerHTML = rows.map(function (r) {
-    const comment = r.comment ? '<span class="comment" title="' + esc(r.comment) + '">' + esc(r.comment) + '</span>' : '<span class="muted">-</span>';
+    // 空值单元格不带 data-label：移动端卡片模式自动收起该行（注意保持 7 个 td 的数量与顺序）
+    const note = r.comment
+      ? '<td class="comment" data-label="Note" title="' + esc(r.comment) + '">' + esc(r.comment) + '</td>'
+      : '<td></td>';
     return '<tr>'
       + '<td class="num">' + esc(r.uid) + '</td>'
       + '<td class="team">' + esc(r.team_name) + '</td>'
-      + '<td>' + esc(r.type) + '</td>'
-      + '<td class="muted">' + esc(r.submit_time) + '</td>'
-      + '<td><span class="tag' + (String(r.final_submission).toLowerCase() === 'yes' ? ' yes' : '') + '">'
+      + '<td data-label="Type">' + esc(r.type) + '</td>'
+      + '<td class="muted" data-label="Submitted">' + esc(r.submit_time) + '</td>'
+      + '<td data-label="Final"><span class="tag'
+      + (String(r.final_submission).toLowerCase() === 'yes' ? ' yes' : '') + '">'
       + esc(r.final_submission) + '</span></td>'
-      + '<td><span class="badge ' + statusClass(r.status) + '">' + esc(statusLabel(r.status)) + '</span></td>'
-      + '<td>' + comment + '</td>'
+      + '<td><span class="badge ' + statusClass(r.status) + '">'
+      + esc(statusLabel(r.status)) + '</span></td>'
+      + note
       + '</tr>';
   }).join('');
   document.getElementById('empty').hidden = rows.length > 0;
@@ -304,21 +375,29 @@ function render() {
     th.classList.toggle('sort-asc', th.dataset.key === state.sortKey && state.sortAsc);
     th.classList.toggle('sort-desc', th.dataset.key === state.sortKey && !state.sortAsc);
   });
+  const sortSel = document.getElementById('sort');
+  if (sortSel.value !== state.sortKey) sortSel.value = state.sortKey;
+}
+
+function setSort(key) {
+  if (state.sortKey === key) state.sortAsc = !state.sortAsc;
+  else { state.sortKey = key; state.sortAsc = key === 'uid'; }
+  render();
 }
 
 function boot() {
   document.querySelectorAll('th[data-key]').forEach(function (th) {
-    th.addEventListener('click', function () {
-      const key = th.dataset.key;
-      if (state.sortKey === key) state.sortAsc = !state.sortAsc;
-      else { state.sortKey = key; state.sortAsc = key === 'uid'; }
-      render();
-    });
+    th.addEventListener('click', function () { setSort(th.dataset.key); });
+  });
+  document.getElementById('sort').addEventListener('change', function (e) {
+    const key = e.target.value;
+    if (state.sortKey === key) { state.sortAsc = !state.sortAsc; } else { state.sortKey = key; state.sortAsc = true; }
+    render();
   });
   document.getElementById('type').addEventListener('change', render);
   document.getElementById('status').addEventListener('change', render);
   document.getElementById('q').addEventListener('input', render);
-  document.getElementById('refresh').addEventListener('click', refreshNow);
+  document.getElementById('refresh').addEventListener('click', function () { loadAll(); });
   // 数据更新后自动刷新（页面可见时每 60s 重新拉取）
   setInterval(function () { if (!document.hidden) loadAll(); }, 60000);
   document.addEventListener('visibilitychange', function () {
