@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-04 07:59:40",
+    "update_time": "2026-09-04 08:26:27",
     "data": {
         "5": {
             "status": "scored",
@@ -128,7 +128,7 @@
             "final_submission": "No"
         },
         "27": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task1",
@@ -263,7 +263,7 @@
             "final_submission": "No"
         },
         "43": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "Tryer",
             "type": "Task3",
