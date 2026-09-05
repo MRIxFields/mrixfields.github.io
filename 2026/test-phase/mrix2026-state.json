@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-05 01:57:00",
+    "update_time": "2026-09-05 12:11:08",
     "data": {
         "5": {
             "status": "scored",
@@ -235,17 +235,8 @@
             "is_latest": true,
             "final_submission": "No"
         },
-        "43": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Tryer",
-            "type": "Task3",
-            "submit_time": "2026-09-04 12:30:12",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "44": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task3",
@@ -254,7 +245,7 @@
             "final_submission": "No"
         },
         "45": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task2",
@@ -263,13 +254,22 @@
             "final_submission": "No"
         },
         "46": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task1",
             "submit_time": "2026-09-05 01:17:15",
             "is_latest": true,
             "final_submission": "No"
+        },
+        "47": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Tryer",
+            "type": "Task3",
+            "submit_time": "2026-09-05 11:41:42",
+            "is_latest": true,
+            "final_submission": "Yes"
         }
     }
 }
