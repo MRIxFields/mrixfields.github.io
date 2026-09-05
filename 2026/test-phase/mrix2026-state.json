@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-05 12:11:08",
+    "update_time": "2026-09-05 14:50:32",
     "data": {
         "5": {
             "status": "scored",
@@ -115,15 +115,6 @@
             "team_name": "MRIxFields2026-VICOROB",
             "type": "Task3",
             "submit_time": "2026-08-23 23:32:42",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "26": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Watt",
-            "type": "Task3",
-            "submit_time": "2026-08-25 09:49:42",
             "is_latest": true,
             "final_submission": "No"
         },
@@ -254,7 +245,7 @@
             "final_submission": "No"
         },
         "46": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task1",
@@ -270,6 +261,33 @@
             "submit_time": "2026-09-05 11:41:42",
             "is_latest": true,
             "final_submission": "Yes"
+        },
+        "48": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task1",
+            "submit_time": "2026-09-05 20:19:26",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "49": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task2",
+            "submit_time": "2026-09-05 20:20:35",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "50": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task3",
+            "submit_time": "2026-09-05 20:21:11",
+            "is_latest": true,
+            "final_submission": "No"
         }
     }
 }
