@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-05 01:29:50",
+    "update_time": "2026-09-05 01:57:00",
     "data": {
         "5": {
             "status": "scored",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "44": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task3",
