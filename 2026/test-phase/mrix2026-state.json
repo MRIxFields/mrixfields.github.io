@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-06 01:19:13",
+    "update_time": "2026-09-06 02:16:01",
     "data": {
         "5": {
             "status": "scored",
@@ -254,7 +254,7 @@
             "final_submission": "No"
         },
         "47": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Tryer",
             "type": "Task3",
@@ -263,7 +263,7 @@
             "final_submission": "Yes"
         },
         "48": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Watt",
             "type": "Task1",
