@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-06 02:16:01",
+    "update_time": "2026-09-06 15:11:08",
     "data": {
         "5": {
             "status": "scored",
@@ -263,7 +263,7 @@
             "final_submission": "Yes"
         },
         "48": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task1",
@@ -272,7 +272,7 @@
             "final_submission": "No"
         },
         "49": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task2",
@@ -281,7 +281,7 @@
             "final_submission": "No"
         },
         "50": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task3",
@@ -290,7 +290,7 @@
             "final_submission": "No"
         },
         "51": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "neuraxfields",
             "type": "Task3",
