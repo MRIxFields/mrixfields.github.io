@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-07 12:25:50",
+    "update_time": "2026-09-08 00:57:28",
     "data": {
         "5": {
             "status": "scored",
@@ -299,7 +299,7 @@
             "final_submission": "No"
         },
         "54": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "neuraxfields",
             "type": "Task3",
@@ -308,7 +308,7 @@
             "final_submission": "Yes"
         },
         "55": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "ULF",
             "type": "Task3",
