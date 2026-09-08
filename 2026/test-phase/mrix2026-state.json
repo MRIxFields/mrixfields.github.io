@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-08 07:00:38",
+    "update_time": "2026-09-08 07:05:36",
     "data": {
         "5": {
             "status": "scored",
@@ -387,6 +387,15 @@
             "submit_time": "2026-09-08 12:47:54",
             "is_latest": true,
             "final_submission": "No"
+        },
+        "66": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "imagine_med_xjtu",
+            "type": "Task1",
+            "submit_time": "2026-09-08 14:08:53",
+            "is_latest": true,
+            "final_submission": "Yes"
         }
     }
 }
