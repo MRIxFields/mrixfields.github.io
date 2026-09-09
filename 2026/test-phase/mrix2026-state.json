@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-09 02:07:11",
+    "update_time": "2026-09-09 02:10:25",
     "data": {
         "5": {
             "status": "scored",
@@ -29,7 +29,7 @@
             "final_submission": "Yes"
         },
         "11": {
-            "status": "infering",
+            "status": "debuging",
             "comment": "Failed, emial sent",
             "team_name": "starfighting",
             "type": "Task1",
@@ -47,7 +47,7 @@
             "final_submission": "Yes"
         },
         "13": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "Failed, email sent",
             "team_name": "starfighting",
             "type": "Task3",
