@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-09 15:32:14",
+    "update_time": "2026-09-09 15:56:06",
     "data": {
         "5": {
             "status": "scored",
@@ -299,7 +299,7 @@
             "final_submission": "No"
         },
         "71": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "ShanghaiTech",
             "type": "Task1",
@@ -371,7 +371,7 @@
             "final_submission": "Yes"
         },
         "80": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "",
             "team_name": "mrixfields2026_svcc",
             "type": "Task3",
@@ -380,7 +380,7 @@
             "final_submission": "Yes"
         },
         "81": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Watt",
             "type": "Task1",
