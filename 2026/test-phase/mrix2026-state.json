@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-09 03:07:14",
+    "update_time": "2026-09-09 03:18:40",
     "data": {
         "5": {
             "status": "scored",
@@ -281,7 +281,7 @@
             "final_submission": "No"
         },
         "60": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "Sorry I forget the team name. Could you please help me find it out?",
             "type": "Task3",
@@ -290,7 +290,7 @@
             "final_submission": "No"
         },
         "61": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "neuraxfields",
             "type": "Task1",
@@ -308,7 +308,7 @@
             "final_submission": "Yes"
         },
         "63": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task3",
