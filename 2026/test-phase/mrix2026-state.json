@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-09 02:14:18",
+    "update_time": "2026-09-09 03:07:14",
     "data": {
         "5": {
             "status": "scored",
@@ -29,7 +29,7 @@
             "final_submission": "Yes"
         },
         "11": {
-            "status": "debuging",
+            "status": "infering",
             "comment": "Failed, emial sent",
             "team_name": "starfighting",
             "type": "Task1",
@@ -47,7 +47,7 @@
             "final_submission": "Yes"
         },
         "13": {
-            "status": "debuging",
+            "status": "queued",
             "comment": "Failed, email sent",
             "team_name": "starfighting",
             "type": "Task3",
@@ -272,7 +272,7 @@
             "final_submission": "No"
         },
         "58": {
-            "status": "infering",
+            "status": "debuging",
             "comment": "",
             "team_name": "TeamNotFound",
             "type": "Task1",
@@ -281,7 +281,7 @@
             "final_submission": "No"
         },
         "60": {
-            "status": "queued",
+            "status": "infered",
             "comment": "",
             "team_name": "Sorry I forget the team name. Could you please help me find it out?",
             "type": "Task3",
