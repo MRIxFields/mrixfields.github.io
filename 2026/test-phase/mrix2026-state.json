@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 15:17:43",
+    "update_time": "2026-09-10 15:37:33",
     "data": {
         "5": {
             "status": "scored",
@@ -200,8 +200,8 @@
             "final_submission": "No"
         },
         "64": {
-            "status": "infering",
-            "comment": "",
+            "status": "debuging",
+            "comment": "copy of 63",
             "team_name": "YYYYYY",
             "type": "Task3",
             "submit_time": "2026-09-08 12:40:11",
@@ -227,7 +227,7 @@
             "final_submission": "Yes"
         },
         "72": {
-            "status": "scored",
+            "status": "infering",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task1",
@@ -236,7 +236,7 @@
             "final_submission": "Yes"
         },
         "73": {
-            "status": "scored",
+            "status": "queued",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task2",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "74": {
-            "status": "infering",
+            "status": "queued",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task3",
@@ -290,7 +290,7 @@
             "final_submission": "Yes"
         },
         "84": {
-            "status": "scored",
+            "status": "infering",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task2",
@@ -299,7 +299,7 @@
             "final_submission": "No"
         },
         "85": {
-            "status": "scored",
+            "status": "queued",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task2",
@@ -308,7 +308,7 @@
             "final_submission": "No"
         },
         "86": {
-            "status": "scored",
+            "status": "queued",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task1",
@@ -317,7 +317,7 @@
             "final_submission": "Yes"
         },
         "87": {
-            "status": "scored",
+            "status": "queued",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task2",
@@ -326,7 +326,7 @@
             "final_submission": "Yes"
         },
         "88": {
-            "status": "scored",
+            "status": "queued",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task3",
@@ -335,7 +335,7 @@
             "final_submission": "Yes"
         },
         "90": {
-            "status": "scored",
+            "status": "queued",
             "comment": "",
             "team_name": "Paris Baguette",
             "type": "Task1",
@@ -344,7 +344,7 @@
             "final_submission": "Yes"
         },
         "92": {
-            "status": "infering",
+            "status": "queued",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task2",
@@ -407,7 +407,7 @@
             "final_submission": "Yes"
         },
         "100": {
-            "status": "infering",
+            "status": "queued",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task2",
@@ -452,7 +452,7 @@
             "final_submission": "No"
         },
         "106": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "inzva mri",
             "type": "Task3",
