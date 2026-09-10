@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-09 15:56:06",
+    "update_time": "2026-09-10 01:43:47",
     "data": {
         "5": {
             "status": "scored",
@@ -236,7 +236,7 @@
             "final_submission": "Yes"
         },
         "63": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task3",
@@ -245,7 +245,7 @@
             "final_submission": "No"
         },
         "64": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task3",
@@ -272,7 +272,7 @@
             "final_submission": "No"
         },
         "68": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task2",
@@ -281,7 +281,7 @@
             "final_submission": "No"
         },
         "69": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task3",
@@ -290,7 +290,7 @@
             "final_submission": "No"
         },
         "70": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "ShanghaiTech",
             "type": "Task2",
@@ -299,7 +299,7 @@
             "final_submission": "No"
         },
         "71": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "ShanghaiTech",
             "type": "Task1",
@@ -308,7 +308,7 @@
             "final_submission": "Yes"
         },
         "72": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task1",
@@ -317,7 +317,7 @@
             "final_submission": "Yes"
         },
         "73": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task2",
@@ -380,7 +380,7 @@
             "final_submission": "Yes"
         },
         "81": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task1",
@@ -389,7 +389,7 @@
             "final_submission": "No"
         },
         "82": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task2",
@@ -398,7 +398,7 @@
             "final_submission": "No"
         },
         "83": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task3",
@@ -407,7 +407,7 @@
             "final_submission": "No"
         },
         "84": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task2",
