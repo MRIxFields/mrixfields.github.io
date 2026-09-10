@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 08:26:48",
+    "update_time": "2026-09-10 10:31:14",
     "data": {
         "5": {
             "status": "scored",
@@ -254,7 +254,7 @@
             "final_submission": "Yes"
         },
         "73": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task2",
@@ -263,7 +263,7 @@
             "final_submission": "Yes"
         },
         "74": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task3",
@@ -371,7 +371,7 @@
             "final_submission": "Yes"
         },
         "88": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task3",
@@ -385,15 +385,6 @@
             "team_name": "Paris Baguette",
             "type": "Task1",
             "submit_time": "2026-09-09 18:19:46",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
-        "91": {
-            "status": "queued",
-            "comment": "MRIxFields2026 Admin` without `can edit` permission.",
-            "team_name": "MRIIRM",
-            "type": "Task1",
-            "submit_time": "2026-09-09 19:00:04",
             "is_latest": true,
             "final_submission": "Yes"
         },
@@ -568,23 +559,86 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "112": {
+        "114": {
             "status": "queued",
-            "comment": "warning: NO docker image tag provided",
+            "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
-            "submit_time": "2026-09-10 12:41:55",
+            "submit_time": "2026-09-10 15:08:26",
             "is_latest": true,
             "final_submission": "No"
         },
-        "113": {
+        "115": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "FieldBridge",
+            "type": "Task1",
+            "submit_time": "2026-09-10 16:09:07",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "116": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "FieldBridge",
+            "type": "Task2",
+            "submit_time": "2026-09-10 16:12:33",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "117": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "mripp",
+            "type": "Task1",
+            "submit_time": "2026-09-10 16:31:39",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "118": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "mripp",
+            "type": "Task2",
+            "submit_time": "2026-09-10 16:32:41",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "119": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "mripp",
+            "type": "Task3",
+            "submit_time": "2026-09-10 16:33:31",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "120": {
             "status": "queued",
             "comment": "",
             "team_name": "TeamNotFound",
             "type": "Task1",
-            "submit_time": "2026-09-10 13:07:26",
+            "submit_time": "2026-09-10 17:24:11",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "121": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Newton",
+            "type": "Task3",
+            "submit_time": "2026-09-10 18:02:52",
             "is_latest": true,
             "final_submission": "No"
+        },
+        "122": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MRIIRM",
+            "type": "Task1",
+            "submit_time": "2026-09-10 18:26:33",
+            "is_latest": true,
+            "final_submission": "Yes"
         }
     }
 }
