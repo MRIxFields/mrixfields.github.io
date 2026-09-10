@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 01:51:45",
+    "update_time": "2026-09-10 01:58:49",
     "data": {
         "5": {
             "status": "scored",
@@ -118,15 +118,6 @@
             "is_latest": true,
             "final_submission": "No"
         },
-        "28": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "MICLab",
-            "type": "Task2",
-            "submit_time": "2026-08-26 04:38:06",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "37": {
             "status": "scored",
             "comment": "",
@@ -153,33 +144,6 @@
             "submit_time": "2026-09-02 21:54:17",
             "is_latest": true,
             "final_submission": "Yes"
-        },
-        "44": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Team Blue Tent",
-            "type": "Task3",
-            "submit_time": "2026-09-05 01:15:41",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "45": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Team Blue Tent",
-            "type": "Task2",
-            "submit_time": "2026-09-05 01:16:22",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "46": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Team Blue Tent",
-            "type": "Task1",
-            "submit_time": "2026-09-05 01:17:15",
-            "is_latest": true,
-            "final_submission": "No"
         },
         "47": {
             "status": "scored",
@@ -370,15 +334,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "80": {
-            "status": "debuging",
-            "comment": "",
-            "team_name": "mrixfields2026_svcc",
-            "type": "Task3",
-            "submit_time": "2026-09-09 08:07:37",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "81": {
             "status": "scored",
             "comment": "",
@@ -451,15 +406,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "89": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "TeamNotFound",
-            "type": "Task1",
-            "submit_time": "2026-09-09 16:13:30",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "90": {
             "status": "queued",
             "comment": "",
@@ -513,6 +459,105 @@
             "submit_time": "2026-09-09 21:15:25",
             "is_latest": true,
             "final_submission": "No"
+        },
+        "96": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "tmp1",
+            "type": "Task1",
+            "submit_time": "2026-09-09 23:16:44",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "97": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "tmp1",
+            "type": "Task2",
+            "submit_time": "2026-09-09 23:17:21",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "98": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "tmp1",
+            "type": "Task3",
+            "submit_time": "2026-09-09 23:18:00",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "99": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Team Blue Tent",
+            "type": "Task1",
+            "submit_time": "2026-09-09 23:42:17",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "100": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Team Blue Tent",
+            "type": "Task2",
+            "submit_time": "2026-09-09 23:42:45",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "101": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Team Blue Tent",
+            "type": "Task3",
+            "submit_time": "2026-09-09 23:43:10",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "102": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "mrixfields2026_svcc",
+            "type": "Task3",
+            "submit_time": "2026-09-10 00:34:10",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "103": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task3",
+            "submit_time": "2026-09-10 01:13:08",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "104": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MICLab",
+            "type": "Task2",
+            "submit_time": "2026-09-10 01:31:04",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "105": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "TeamNotFound",
+            "type": "Task1",
+            "submit_time": "2026-09-10 04:00:13",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "106": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "inzva mri",
+            "type": "Task3",
+            "submit_time": "2026-09-10 06:48:49",
+            "is_latest": true,
+            "final_submission": "Yes"
         }
     }
 }
