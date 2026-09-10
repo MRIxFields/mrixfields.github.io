@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 06:22:16",
+    "update_time": "2026-09-10 06:24:17",
     "data": {
         "5": {
             "status": "scored",
@@ -570,7 +570,7 @@
         },
         "112": {
             "status": "queued",
-            "comment": "",
+            "comment": "warning: NO docker image tag provided",
             "team_name": "CrossFielders2026",
             "type": "Task1",
             "submit_time": "2026-09-10 12:41:55",
