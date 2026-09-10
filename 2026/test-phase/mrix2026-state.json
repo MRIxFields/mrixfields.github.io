@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 07:05:16",
+    "update_time": "2026-09-10 08:26:48",
     "data": {
         "5": {
             "status": "scored",
@@ -254,7 +254,7 @@
             "final_submission": "Yes"
         },
         "73": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task2",
@@ -335,7 +335,7 @@
             "final_submission": "No"
         },
         "84": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task2",
@@ -344,7 +344,7 @@
             "final_submission": "No"
         },
         "85": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task2",
@@ -362,7 +362,7 @@
             "final_submission": "Yes"
         },
         "87": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task2",
@@ -371,7 +371,7 @@
             "final_submission": "Yes"
         },
         "88": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task3",
