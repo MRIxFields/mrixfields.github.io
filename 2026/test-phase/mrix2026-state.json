@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 05:47:49",
+    "update_time": "2026-09-10 06:22:16",
     "data": {
         "5": {
             "status": "scored",
@@ -353,7 +353,7 @@
             "final_submission": "No"
         },
         "86": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task1",
@@ -362,7 +362,7 @@
             "final_submission": "Yes"
         },
         "87": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "SSPH",
             "type": "Task2",
@@ -514,15 +514,6 @@
             "is_latest": true,
             "final_submission": "No"
         },
-        "105": {
-            "status": "queued",
-            "comment": "docker image registry issue",
-            "team_name": "TeamNotFound",
-            "type": "Task1",
-            "submit_time": "2026-09-10 04:00:13",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "106": {
             "status": "queued",
             "comment": "",
@@ -576,6 +567,24 @@
             "submit_time": "2026-09-10 12:22:04",
             "is_latest": true,
             "final_submission": "Yes"
+        },
+        "112": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task1",
+            "submit_time": "2026-09-10 12:41:55",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "113": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "TeamNotFound",
+            "type": "Task1",
+            "submit_time": "2026-09-10 13:07:26",
+            "is_latest": true,
+            "final_submission": "No"
         }
     }
 }
