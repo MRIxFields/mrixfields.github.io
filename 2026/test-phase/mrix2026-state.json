@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 04:22:26",
+    "update_time": "2026-09-10 05:47:49",
     "data": {
         "5": {
             "status": "scored",
@@ -225,33 +225,6 @@
             "submit_time": "2026-09-08 14:08:53",
             "is_latest": true,
             "final_submission": "Yes"
-        },
-        "67": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "imispllove",
-            "type": "Task1",
-            "submit_time": "2026-09-08 15:41:46",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "68": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "imispllove",
-            "type": "Task2",
-            "submit_time": "2026-09-08 15:44:17",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "69": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "imispllove",
-            "type": "Task3",
-            "submit_time": "2026-09-08 15:45:00",
-            "is_latest": true,
-            "final_submission": "No"
         },
         "70": {
             "status": "scored",
@@ -556,6 +529,51 @@
             "team_name": "inzva mri",
             "type": "Task3",
             "submit_time": "2026-09-10 06:48:49",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "107": {
+            "status": "queued",
+            "comment": "Warning: NO docker image tag provided",
+            "team_name": "inzvamri",
+            "type": "Task3",
+            "submit_time": "2026-09-10 10:05:24",
+            "is_latest": true,
+            "final_submission": "No"
+        },
+        "108": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MIPLAB - MRIxFields 2026",
+            "type": "Task2",
+            "submit_time": "2026-09-10 11:27:14",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "109": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "imispllove",
+            "type": "Task1",
+            "submit_time": "2026-09-10 12:19:33",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "110": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "imispllove",
+            "type": "Task2",
+            "submit_time": "2026-09-10 12:21:26",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "111": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "imispllove",
+            "type": "Task3",
+            "submit_time": "2026-09-10 12:22:04",
             "is_latest": true,
             "final_submission": "Yes"
         }
