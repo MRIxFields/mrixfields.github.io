@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 02:30:50",
+    "update_time": "2026-09-10 02:39:32",
     "data": {
         "5": {
             "status": "scored",
@@ -417,7 +417,7 @@
         },
         "91": {
             "status": "queued",
-            "comment": "failed to download docker image",
+            "comment": "MRIxFields2026 Admin` without `can edit` permission.",
             "team_name": "MRIIRM",
             "type": "Task1",
             "submit_time": "2026-09-09 19:00:04",
@@ -471,7 +471,7 @@
         },
         "97": {
             "status": "queued",
-            "comment": "failed to download docker image",
+            "comment": "MRIxFields2026 Admin` without `can edit` permission.",
             "team_name": "tmp1",
             "type": "Task2",
             "submit_time": "2026-09-09 23:17:21",
@@ -543,7 +543,7 @@
         },
         "105": {
             "status": "queued",
-            "comment": "",
+            "comment": "docker image registry issue",
             "team_name": "TeamNotFound",
             "type": "Task1",
             "submit_time": "2026-09-10 04:00:13",
