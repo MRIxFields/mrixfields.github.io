@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 13:16:35",
+    "update_time": "2026-09-10 15:00:49",
     "data": {
         "5": {
             "status": "scored",
@@ -163,15 +163,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "55": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "ULF",
-            "type": "Task3",
-            "submit_time": "2026-09-07 16:20:18",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "60": {
             "status": "scored",
             "comment": "",
@@ -225,15 +216,6 @@
             "submit_time": "2026-09-08 14:08:53",
             "is_latest": true,
             "final_submission": "Yes"
-        },
-        "70": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "ShanghaiTech",
-            "type": "Task2",
-            "submit_time": "2026-09-08 16:05:08",
-            "is_latest": true,
-            "final_submission": "No"
         },
         "71": {
             "status": "scored",
@@ -307,33 +289,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "81": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Watt",
-            "type": "Task1",
-            "submit_time": "2026-09-09 14:57:05",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "82": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Watt",
-            "type": "Task2",
-            "submit_time": "2026-09-09 14:57:31",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "83": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Watt",
-            "type": "Task3",
-            "submit_time": "2026-09-09 14:58:16",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "84": {
             "status": "scored",
             "comment": "",
@@ -344,7 +299,7 @@
             "final_submission": "No"
         },
         "85": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task2",
@@ -414,15 +369,6 @@
             "submit_time": "2026-09-09 20:24:01",
             "is_latest": true,
             "final_submission": "Yes"
-        },
-        "95": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "lipeirong",
-            "type": "Task3",
-            "submit_time": "2026-09-09 21:15:25",
-            "is_latest": true,
-            "final_submission": "No"
         },
         "96": {
             "status": "queued",
@@ -622,21 +568,102 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "121": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "Newton",
-            "type": "Task3",
-            "submit_time": "2026-09-10 18:02:52",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "122": {
             "status": "queued",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task1",
             "submit_time": "2026-09-10 18:26:33",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "123": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "PROMISE-LAIMBIO-davidviar",
+            "type": "Task1",
+            "submit_time": "2026-09-10 18:31:34",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "124": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "lipeirong",
+            "type": "Task3",
+            "submit_time": "2026-09-10 18:58:34",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "125": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task1",
+            "submit_time": "2026-09-10 19:08:38",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "126": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task2",
+            "submit_time": "2026-09-10 19:09:18",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "127": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Watt",
+            "type": "Task3",
+            "submit_time": "2026-09-10 19:10:02",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "128": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "ULF",
+            "type": "Task3",
+            "submit_time": "2026-09-10 19:10:49",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "129": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "ULF",
+            "type": "Task1",
+            "submit_time": "2026-09-10 19:11:30",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "130": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "ULF",
+            "type": "Task2",
+            "submit_time": "2026-09-10 19:12:05",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "131": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "ShanghaiTech",
+            "type": "Task2",
+            "submit_time": "2026-09-10 19:41:35",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "132": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "Newton",
+            "type": "Task3",
+            "submit_time": "2026-09-10 22:00:18",
             "is_latest": true,
             "final_submission": "Yes"
         }
