@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 16:58:45",
+    "update_time": "2026-09-11 17:02:45",
     "data": {
         "5": {
             "status": "scored",
@@ -209,7 +209,7 @@
             "final_submission": "Yes"
         },
         "72": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task1",
@@ -263,7 +263,7 @@
             "final_submission": "Yes"
         },
         "84": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "YYYYYY",
             "type": "Task2",
@@ -659,7 +659,7 @@
             "final_submission": "Yes"
         },
         "148": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "mip",
             "type": "Task2",
