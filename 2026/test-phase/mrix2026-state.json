@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 10:06:11",
+    "update_time": "2026-09-11 11:11:57",
     "data": {
         "5": {
             "status": "scored",
@@ -317,7 +317,7 @@
             "final_submission": "Yes"
         },
         "93": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task3",
@@ -470,7 +470,7 @@
             "final_submission": "Yes"
         },
         "120": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "TeamNotFound",
             "type": "Task1",
