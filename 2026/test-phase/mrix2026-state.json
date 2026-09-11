@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 00:58:00",
+    "update_time": "2026-09-11 01:03:47",
     "data": {
         "5": {
             "status": "scored",
@@ -163,15 +163,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "60": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "momentum",
-            "type": "Task3",
-            "submit_time": "2026-09-08 05:02:14",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "61": {
             "status": "scored",
             "comment": "",
@@ -253,15 +244,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "75": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "MRIxFields2026-Zhu",
-            "type": "Task3",
-            "submit_time": "2026-09-08 23:26:21",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "76": {
             "status": "infering",
             "comment": "",
@@ -295,15 +277,6 @@
             "team_name": "YYYYYY",
             "type": "Task2",
             "submit_time": "2026-09-09 15:04:14",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "85": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "MRIxFields2026-Zhu",
-            "type": "Task2",
-            "submit_time": "2026-09-09 15:06:35",
             "is_latest": true,
             "final_submission": "No"
         },
@@ -442,15 +415,6 @@
             "is_latest": true,
             "final_submission": "No"
         },
-        "104": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "MICLab",
-            "type": "Task2",
-            "submit_time": "2026-09-10 01:31:04",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "106": {
             "status": "scored",
             "comment": "",
@@ -506,7 +470,7 @@
             "final_submission": "Yes"
         },
         "114": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
@@ -574,15 +538,6 @@
             "team_name": "MRIIRM",
             "type": "Task1",
             "submit_time": "2026-09-10 18:26:33",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
-        "123": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "PROMISE-LAIMBIO-davidviar",
-            "type": "Task1",
-            "submit_time": "2026-09-10 18:31:34",
             "is_latest": true,
             "final_submission": "Yes"
         },
@@ -664,6 +619,78 @@
             "team_name": "Newton",
             "type": "Task3",
             "submit_time": "2026-09-10 22:00:18",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "133": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MRIxFields2026-Zhu",
+            "type": "Task2",
+            "submit_time": "2026-09-10 23:23:32",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "134": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MRIxFields2026-Zhu",
+            "type": "Task3",
+            "submit_time": "2026-09-10 23:26:07",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "135": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MICLab",
+            "type": "Task2",
+            "submit_time": "2026-09-11 03:30:57",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "136": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "PROMISE-LAIMBIO-davidviar",
+            "type": "Task1",
+            "submit_time": "2026-09-11 05:15:53",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "140": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "NVGen",
+            "type": "Task1",
+            "submit_time": "2026-09-11 06:51:39",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "141": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "NVGen",
+            "type": "Task2",
+            "submit_time": "2026-09-11 07:01:18",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "142": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "NVGen",
+            "type": "Task3",
+            "submit_time": "2026-09-11 07:01:33",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "143": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "momentum",
+            "type": "Task3",
+            "submit_time": "2026-09-11 08:05:36",
             "is_latest": true,
             "final_submission": "Yes"
         }
