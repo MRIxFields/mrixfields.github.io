@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 11:51:24",
+    "update_time": "2026-09-11 12:31:37",
     "data": {
         "5": {
             "status": "scored",
@@ -326,7 +326,7 @@
             "final_submission": "Yes"
         },
         "94": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "HiLab",
             "type": "Task3",
@@ -335,7 +335,7 @@
             "final_submission": "Yes"
         },
         "96": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "tmp1",
             "type": "Task1",
@@ -479,7 +479,7 @@
             "final_submission": "Yes"
         },
         "122": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task1",
