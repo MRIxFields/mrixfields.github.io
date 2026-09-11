@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 11:20:42",
+    "update_time": "2026-09-11 11:51:24",
     "data": {
         "5": {
             "status": "scored",
@@ -317,7 +317,7 @@
             "final_submission": "Yes"
         },
         "93": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task3",
@@ -326,7 +326,7 @@
             "final_submission": "Yes"
         },
         "94": {
-            "status": "queued",
+            "status": "infered",
             "comment": "",
             "team_name": "HiLab",
             "type": "Task3",
@@ -345,7 +345,7 @@
         },
         "97": {
             "status": "queued",
-            "comment": "MRIxFields2026 Admin` without `can edit` permission.",
+            "comment": "",
             "team_name": "tmp1",
             "type": "Task2",
             "submit_time": "2026-09-09 23:17:21",
@@ -470,7 +470,7 @@
             "final_submission": "Yes"
         },
         "120": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "TeamNotFound",
             "type": "Task1",
