@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 05:02:42",
+    "update_time": "2026-09-11 06:52:53",
     "data": {
         "5": {
             "status": "scored",
@@ -254,7 +254,7 @@
             "final_submission": "Yes"
         },
         "77": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "croissant",
             "type": "Task2",
@@ -479,7 +479,7 @@
             "final_submission": "Yes"
         },
         "116": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "FieldBridge",
             "type": "Task2",
@@ -488,7 +488,7 @@
             "final_submission": "Yes"
         },
         "117": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "",
             "team_name": "mripp",
             "type": "Task1",
@@ -497,7 +497,7 @@
             "final_submission": "Yes"
         },
         "118": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "MRIxFields2026 Admin` without `can edit` permission.",
             "team_name": "mripp",
             "type": "Task2",
@@ -506,7 +506,7 @@
             "final_submission": "Yes"
         },
         "119": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "",
             "team_name": "mripp",
             "type": "Task3",
@@ -515,7 +515,7 @@
             "final_submission": "Yes"
         },
         "120": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "TeamNotFound",
             "type": "Task1",
