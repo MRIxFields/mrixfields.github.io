@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 02:52:12",
+    "update_time": "2026-09-11 03:01:52",
     "data": {
         "5": {
             "status": "scored",
@@ -11,7 +11,7 @@
             "final_submission": "Yes"
         },
         "6": {
-            "status": "scored",
+            "status": "debuging",
             "comment": "emailed: DICE abnormal",
             "team_name": "CrossFielders2026",
             "type": "Task2",
@@ -443,7 +443,7 @@
             "final_submission": "Yes"
         },
         "109": {
-            "status": "scored",
+            "status": "debuging",
             "comment": "emailed: DICE abnormal",
             "team_name": "imispllove",
             "type": "Task1",
@@ -452,7 +452,7 @@
             "final_submission": "Yes"
         },
         "110": {
-            "status": "scored",
+            "status": "debuging",
             "comment": "emailed: DICE abnormal",
             "team_name": "imispllove",
             "type": "Task2",
