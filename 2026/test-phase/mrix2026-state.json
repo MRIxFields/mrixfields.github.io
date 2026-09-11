@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 07:00:38",
+    "update_time": "2026-09-11 07:01:40",
     "data": {
         "5": {
             "status": "scored",
@@ -7,15 +7,6 @@
             "team_name": "winner",
             "type": "Task1",
             "submit_time": "2026-07-20 19:36:52",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
-        "6": {
-            "status": "debuging",
-            "comment": "emailed: DICE abnormal",
-            "team_name": "CrossFielders2026",
-            "type": "Task2",
-            "submit_time": "2026-08-07 21:15:31",
             "is_latest": true,
             "final_submission": "Yes"
         },
@@ -415,15 +406,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "107": {
-            "status": "scored",
-            "comment": "Warning: NO docker image tag provided",
-            "team_name": "inzvamri",
-            "type": "Task3",
-            "submit_time": "2026-09-10 10:05:24",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "108": {
             "status": "scored",
             "comment": "",
@@ -729,6 +711,24 @@
             "submit_time": "2026-09-11 14:51:05",
             "is_latest": true,
             "final_submission": "Yes"
+        },
+        "157": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task2",
+            "submit_time": "2026-09-11 14:53:36",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "159": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "inzvamri",
+            "type": "Task3",
+            "submit_time": "2026-09-11 14:58:07",
+            "is_latest": true,
+            "final_submission": "No"
         }
     }
 }
