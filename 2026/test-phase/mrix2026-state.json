@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-10 15:37:33",
+    "update_time": "2026-09-11 00:58:00",
     "data": {
         "5": {
             "status": "scored",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "74": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task3",
@@ -254,7 +254,7 @@
             "final_submission": "Yes"
         },
         "75": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task3",
@@ -263,7 +263,7 @@
             "final_submission": "No"
         },
         "76": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "croissant",
             "type": "Task1",
@@ -344,7 +344,7 @@
             "final_submission": "Yes"
         },
         "92": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task2",
@@ -353,7 +353,7 @@
             "final_submission": "Yes"
         },
         "93": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task3",
@@ -407,7 +407,7 @@
             "final_submission": "Yes"
         },
         "100": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task2",
@@ -416,7 +416,7 @@
             "final_submission": "Yes"
         },
         "101": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task3",
@@ -452,7 +452,7 @@
             "final_submission": "No"
         },
         "106": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "inzva mri",
             "type": "Task3",
@@ -461,7 +461,7 @@
             "final_submission": "Yes"
         },
         "107": {
-            "status": "queued",
+            "status": "scored",
             "comment": "Warning: NO docker image tag provided",
             "team_name": "inzvamri",
             "type": "Task3",
@@ -470,7 +470,7 @@
             "final_submission": "No"
         },
         "108": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "MIPLAB - MRIxFields 2026",
             "type": "Task2",
@@ -479,7 +479,7 @@
             "final_submission": "Yes"
         },
         "109": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task1",
@@ -488,7 +488,7 @@
             "final_submission": "Yes"
         },
         "110": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task2",
@@ -497,7 +497,7 @@
             "final_submission": "Yes"
         },
         "111": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task3",
