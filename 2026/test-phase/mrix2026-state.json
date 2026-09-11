@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 01:03:47",
+    "update_time": "2026-09-11 02:52:12",
     "data": {
         "5": {
             "status": "scored",
@@ -12,7 +12,7 @@
         },
         "6": {
             "status": "scored",
-            "comment": "",
+            "comment": "emailed: DICE abnormal",
             "team_name": "CrossFielders2026",
             "type": "Task2",
             "submit_time": "2026-08-07 21:15:31",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "76": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "croissant",
             "type": "Task1",
@@ -389,7 +389,7 @@
             "final_submission": "Yes"
         },
         "101": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task3",
@@ -398,7 +398,7 @@
             "final_submission": "Yes"
         },
         "102": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "mrixfields2026_svcc",
             "type": "Task3",
@@ -444,7 +444,7 @@
         },
         "109": {
             "status": "scored",
-            "comment": "",
+            "comment": "emailed: DICE abnormal",
             "team_name": "imispllove",
             "type": "Task1",
             "submit_time": "2026-09-10 12:19:33",
@@ -453,7 +453,7 @@
         },
         "110": {
             "status": "scored",
-            "comment": "",
+            "comment": "emailed: DICE abnormal",
             "team_name": "imispllove",
             "type": "Task2",
             "submit_time": "2026-09-10 12:21:26",
@@ -470,7 +470,7 @@
             "final_submission": "Yes"
         },
         "114": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
