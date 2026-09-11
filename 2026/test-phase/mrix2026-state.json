@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 15:33:04",
+    "update_time": "2026-09-11 16:25:26",
     "data": {
         "5": {
             "status": "scored",
@@ -551,7 +551,7 @@
             "final_submission": "Yes"
         },
         "131": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "ShanghaiTech",
             "type": "Task2",
@@ -560,7 +560,7 @@
             "final_submission": "Yes"
         },
         "132": {
-            "status": "queued",
+            "status": "infered",
             "comment": "",
             "team_name": "Newton",
             "type": "Task3",
