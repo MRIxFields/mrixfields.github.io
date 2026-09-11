@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 06:52:53",
+    "update_time": "2026-09-11 07:00:38",
     "data": {
         "5": {
             "status": "scored",
@@ -433,24 +433,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "109": {
-            "status": "debuging",
-            "comment": "emailed: DICE abnormal",
-            "team_name": "imispllove",
-            "type": "Task1",
-            "submit_time": "2026-09-10 12:19:33",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
-        "110": {
-            "status": "debuging",
-            "comment": "emailed: DICE abnormal",
-            "team_name": "imispllove",
-            "type": "Task2",
-            "submit_time": "2026-09-10 12:21:26",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "111": {
             "status": "scored",
             "comment": "",
@@ -459,15 +441,6 @@
             "submit_time": "2026-09-10 12:22:04",
             "is_latest": true,
             "final_submission": "Yes"
-        },
-        "114": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "CrossFielders2026",
-            "type": "Task1",
-            "submit_time": "2026-09-10 15:08:26",
-            "is_latest": true,
-            "final_submission": "No"
         },
         "115": {
             "status": "scored",
@@ -613,15 +586,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "133": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "MRIxFields2026-Zhu",
-            "type": "Task2",
-            "submit_time": "2026-09-10 23:23:32",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "134": {
             "status": "queued",
             "comment": "",
@@ -685,15 +649,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "144": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "CrossFielders2026",
-            "type": "Task3",
-            "submit_time": "2026-09-11 09:06:09",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "145": {
             "status": "queued",
             "comment": "",
@@ -718,6 +673,60 @@
             "team_name": "CrossFielders2026",
             "type": "Task2",
             "submit_time": "2026-09-11 12:17:48",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "148": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "mip",
+            "type": "Task2",
+            "submit_time": "2026-09-11 12:44:09",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "151": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task1",
+            "submit_time": "2026-09-11 13:18:51",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "153": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task3",
+            "submit_time": "2026-09-11 14:26:30",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "154": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "MRIxFields2026-Zhu",
+            "type": "Task2",
+            "submit_time": "2026-09-11 14:32:53",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "155": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "imispllove",
+            "type": "Task1",
+            "submit_time": "2026-09-11 14:50:37",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "156": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "imispllove",
+            "type": "Task2",
+            "submit_time": "2026-09-11 14:51:05",
             "is_latest": true,
             "final_submission": "Yes"
         }
