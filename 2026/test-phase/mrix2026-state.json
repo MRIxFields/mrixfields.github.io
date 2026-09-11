@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 03:01:52",
+    "update_time": "2026-09-11 05:02:42",
     "data": {
         "5": {
             "status": "scored",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "76": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "croissant",
             "type": "Task1",
@@ -254,7 +254,7 @@
             "final_submission": "Yes"
         },
         "77": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "croissant",
             "type": "Task2",
@@ -406,15 +406,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "103": {
-            "status": "queued",
-            "comment": "",
-            "team_name": "CrossFielders2026",
-            "type": "Task3",
-            "submit_time": "2026-09-10 01:13:08",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "106": {
             "status": "scored",
             "comment": "",
@@ -470,7 +461,7 @@
             "final_submission": "Yes"
         },
         "114": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
@@ -479,7 +470,7 @@
             "final_submission": "No"
         },
         "115": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "FieldBridge",
             "type": "Task1",
@@ -488,7 +479,7 @@
             "final_submission": "Yes"
         },
         "116": {
-            "status": "queued",
+            "status": "infered",
             "comment": "",
             "team_name": "FieldBridge",
             "type": "Task2",
@@ -691,6 +682,42 @@
             "team_name": "momentum",
             "type": "Task3",
             "submit_time": "2026-09-11 08:05:36",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "144": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task3",
+            "submit_time": "2026-09-11 09:06:09",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "145": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "momentum",
+            "type": "Task1",
+            "submit_time": "2026-09-11 10:21:23",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "146": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "momentum",
+            "type": "Task2",
+            "submit_time": "2026-09-11 10:22:49",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "147": {
+            "status": "queued",
+            "comment": "",
+            "team_name": "CrossFielders2026",
+            "type": "Task2",
+            "submit_time": "2026-09-11 12:17:48",
             "is_latest": true,
             "final_submission": "Yes"
         }
