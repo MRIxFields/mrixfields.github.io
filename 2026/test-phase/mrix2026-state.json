@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 16:25:52",
+    "update_time": "2026-09-11 16:47:07",
     "data": {
         "5": {
             "status": "scored",
@@ -560,7 +560,7 @@
             "final_submission": "Yes"
         },
         "132": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "Newton",
             "type": "Task3",
@@ -569,7 +569,7 @@
             "final_submission": "Yes"
         },
         "134": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task3",
@@ -641,7 +641,7 @@
             "final_submission": "Yes"
         },
         "146": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "momentum",
             "type": "Task2",
@@ -650,7 +650,7 @@
             "final_submission": "Yes"
         },
         "147": {
-            "status": "queued",
+            "status": "infered",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task2",
@@ -659,7 +659,7 @@
             "final_submission": "Yes"
         },
         "148": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "mip",
             "type": "Task2",
@@ -686,7 +686,7 @@
             "final_submission": "Yes"
         },
         "154": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task2",
