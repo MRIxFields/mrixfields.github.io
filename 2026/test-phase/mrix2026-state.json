@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 07:06:17",
+    "update_time": "2026-09-11 10:06:11",
     "data": {
         "5": {
             "status": "scored",
@@ -245,7 +245,7 @@
             "final_submission": "Yes"
         },
         "77": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "croissant",
             "type": "Task2",
@@ -254,7 +254,7 @@
             "final_submission": "Yes"
         },
         "78": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "croissant",
             "type": "Task3",
