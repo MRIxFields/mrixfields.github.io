@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-12 06:01:58",
+    "update_time": "2026-09-12 14:19:13",
     "data": {
         "5": {
             "status": "scored",
@@ -344,7 +344,7 @@
             "final_submission": "Yes"
         },
         "97": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "tmp1",
             "type": "Task2",
@@ -353,7 +353,7 @@
             "final_submission": "Yes"
         },
         "98": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "tmp1",
             "type": "Task3",
@@ -389,7 +389,7 @@
             "final_submission": "Yes"
         },
         "102": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "mrixfields2026_svcc",
             "type": "Task3",
@@ -479,7 +479,7 @@
             "final_submission": "Yes"
         },
         "122": {
-            "status": "debuging",
+            "status": "scored",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task1",
@@ -497,7 +497,7 @@
             "final_submission": "Yes"
         },
         "125": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task1",
@@ -506,7 +506,7 @@
             "final_submission": "Yes"
         },
         "126": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task2",
@@ -515,7 +515,7 @@
             "final_submission": "Yes"
         },
         "127": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Watt",
             "type": "Task3",
@@ -524,7 +524,7 @@
             "final_submission": "Yes"
         },
         "128": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "ULF",
             "type": "Task3",
@@ -533,7 +533,7 @@
             "final_submission": "Yes"
         },
         "129": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "ULF",
             "type": "Task1",
@@ -542,7 +542,7 @@
             "final_submission": "Yes"
         },
         "130": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "ULF",
             "type": "Task2",
@@ -641,7 +641,7 @@
             "final_submission": "Yes"
         },
         "146": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "momentum",
             "type": "Task2",
@@ -659,7 +659,7 @@
             "final_submission": "Yes"
         },
         "148": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "mip",
             "type": "Task2",
@@ -677,7 +677,7 @@
             "final_submission": "Yes"
         },
         "153": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task3",
@@ -695,7 +695,7 @@
             "final_submission": "Yes"
         },
         "155": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task1",
@@ -704,7 +704,7 @@
             "final_submission": "Yes"
         },
         "156": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task2",
@@ -713,7 +713,7 @@
             "final_submission": "Yes"
         },
         "157": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task2",
@@ -722,7 +722,7 @@
             "final_submission": "Yes"
         },
         "159": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "inzvamri",
             "type": "Task3",
@@ -731,7 +731,7 @@
             "final_submission": "No"
         },
         "160": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "MIPLAB",
             "type": "Task1",
@@ -740,7 +740,7 @@
             "final_submission": "Yes"
         },
         "161": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "AI4Viaevum",
             "type": "Task1",
@@ -749,7 +749,7 @@
             "final_submission": "Yes"
         },
         "162": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "AI4Viaevum",
             "type": "Task2",
@@ -758,7 +758,7 @@
             "final_submission": "Yes"
         },
         "163": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "AI4Viaevum",
             "type": "Task3",
