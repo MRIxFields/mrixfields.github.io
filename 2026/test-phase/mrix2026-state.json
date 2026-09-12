@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-12 03:38:46",
+    "update_time": "2026-09-12 05:51:41",
     "data": {
         "5": {
             "status": "scored",
@@ -344,7 +344,7 @@
             "final_submission": "Yes"
         },
         "97": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "tmp1",
             "type": "Task2",
@@ -389,7 +389,7 @@
             "final_submission": "Yes"
         },
         "102": {
-            "status": "unknown",
+            "status": "infering",
             "comment": "",
             "team_name": "mrixfields2026_svcc",
             "type": "Task3",
@@ -488,7 +488,7 @@
             "final_submission": "Yes"
         },
         "124": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "lipeirong",
             "type": "Task3",
@@ -497,7 +497,7 @@
             "final_submission": "Yes"
         },
         "125": {
-            "status": "queued",
+            "status": "infered",
             "comment": "",
             "team_name": "Watt",
             "type": "Task1",
@@ -578,7 +578,7 @@
             "final_submission": "Yes"
         },
         "135": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "MICLab",
             "type": "Task2",
@@ -659,7 +659,7 @@
             "final_submission": "Yes"
         },
         "148": {
-            "status": "scored",
+            "status": "infered",
             "comment": "",
             "team_name": "mip",
             "type": "Task2",
@@ -668,7 +668,7 @@
             "final_submission": "Yes"
         },
         "151": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
@@ -695,7 +695,7 @@
             "final_submission": "Yes"
         },
         "155": {
-            "status": "unknown",
+            "status": "infered",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task1",
@@ -722,7 +722,7 @@
             "final_submission": "Yes"
         },
         "159": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "inzvamri",
             "type": "Task3",
@@ -731,7 +731,7 @@
             "final_submission": "No"
         },
         "160": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "MIPLAB",
             "type": "Task1",
