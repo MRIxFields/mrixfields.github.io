@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-12 05:57:28",
+    "update_time": "2026-09-12 06:01:58",
     "data": {
         "5": {
             "status": "scored",
@@ -218,7 +218,7 @@
             "final_submission": "Yes"
         },
         "73": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "Tourist",
             "type": "Task2",
