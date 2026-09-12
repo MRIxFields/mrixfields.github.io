@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-12 02:58:22",
+    "update_time": "2026-09-12 03:13:30",
     "data": {
         "5": {
             "status": "scored",
@@ -335,7 +335,7 @@
             "final_submission": "Yes"
         },
         "96": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "tmp1",
             "type": "Task1",
@@ -389,7 +389,7 @@
             "final_submission": "Yes"
         },
         "102": {
-            "status": "infering",
+            "status": "unknown",
             "comment": "",
             "team_name": "mrixfields2026_svcc",
             "type": "Task3",
@@ -479,7 +479,7 @@
             "final_submission": "Yes"
         },
         "122": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task1",
@@ -641,7 +641,7 @@
             "final_submission": "Yes"
         },
         "146": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "momentum",
             "type": "Task2",
@@ -668,7 +668,7 @@
             "final_submission": "Yes"
         },
         "151": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
@@ -695,7 +695,7 @@
             "final_submission": "Yes"
         },
         "155": {
-            "status": "queued",
+            "status": "unknown",
             "comment": "",
             "team_name": "imispllove",
             "type": "Task1",
