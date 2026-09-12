@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-12 03:13:30",
+    "update_time": "2026-09-12 03:38:46",
     "data": {
         "5": {
             "status": "scored",
@@ -479,7 +479,7 @@
             "final_submission": "Yes"
         },
         "122": {
-            "status": "infered",
+            "status": "debuging",
             "comment": "",
             "team_name": "MRIIRM",
             "type": "Task1",
@@ -488,7 +488,7 @@
             "final_submission": "Yes"
         },
         "124": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "lipeirong",
             "type": "Task3",
@@ -659,7 +659,7 @@
             "final_submission": "Yes"
         },
         "148": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "mip",
             "type": "Task2",
@@ -722,7 +722,7 @@
             "final_submission": "Yes"
         },
         "159": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "inzvamri",
             "type": "Task3",
