@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-11 17:02:45",
+    "update_time": "2026-09-12 02:58:02",
     "data": {
         "5": {
             "status": "scored",
@@ -569,7 +569,7 @@
             "final_submission": "Yes"
         },
         "134": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task3",
@@ -686,7 +686,7 @@
             "final_submission": "Yes"
         },
         "154": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task2",
