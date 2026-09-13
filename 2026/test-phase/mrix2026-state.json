@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-13 08:01:30",
+    "update_time": "2026-09-13 10:35:56",
     "data": {
         "5": {
             "status": "scored",
@@ -622,15 +622,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "143": {
-            "status": "debuging",
-            "comment": "mailed",
-            "team_name": "momentum",
-            "type": "Task3",
-            "submit_time": "2026-09-11 08:05:36",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "145": {
             "status": "scored",
             "comment": "",
@@ -763,6 +754,15 @@
             "team_name": "AI4Viaevum",
             "type": "Task3",
             "submit_time": "2026-09-11 21:00:25",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "164": {
+            "status": "infering",
+            "comment": "",
+            "team_name": "momentum",
+            "type": "Task3",
+            "submit_time": "2026-09-13 18:05:18",
             "is_latest": true,
             "final_submission": "Yes"
         }
