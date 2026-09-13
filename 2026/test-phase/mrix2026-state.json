@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-12 14:24:21",
+    "update_time": "2026-09-13 01:43:28",
     "data": {
         "5": {
             "status": "scored",
@@ -353,7 +353,7 @@
             "final_submission": "Yes"
         },
         "98": {
-            "status": "infering",
+            "status": "scored",
             "comment": "",
             "team_name": "tmp1",
             "type": "Task3",
@@ -362,7 +362,7 @@
             "final_submission": "Yes"
         },
         "99": {
-            "status": "queued",
+            "status": "infering",
             "comment": "",
             "team_name": "Team Blue Tent",
             "type": "Task1",
@@ -587,7 +587,7 @@
             "final_submission": "Yes"
         },
         "136": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "PROMISE-LAIMBIO-davidviar",
             "type": "Task1",
@@ -596,7 +596,7 @@
             "final_submission": "Yes"
         },
         "140": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "NVGen",
             "type": "Task1",
@@ -605,7 +605,7 @@
             "final_submission": "Yes"
         },
         "141": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "",
             "team_name": "NVGen",
             "type": "Task2",
@@ -614,7 +614,7 @@
             "final_submission": "Yes"
         },
         "142": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "NVGen",
             "type": "Task3",
@@ -623,7 +623,7 @@
             "final_submission": "Yes"
         },
         "143": {
-            "status": "queued",
+            "status": "debuging",
             "comment": "",
             "team_name": "momentum",
             "type": "Task3",
@@ -632,7 +632,7 @@
             "final_submission": "Yes"
         },
         "145": {
-            "status": "queued",
+            "status": "scored",
             "comment": "",
             "team_name": "momentum",
             "type": "Task1",
@@ -650,7 +650,7 @@
             "final_submission": "Yes"
         },
         "147": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task2",
@@ -668,7 +668,7 @@
             "final_submission": "Yes"
         },
         "151": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "CrossFielders2026",
             "type": "Task1",
@@ -686,7 +686,7 @@
             "final_submission": "Yes"
         },
         "154": {
-            "status": "infered",
+            "status": "scored",
             "comment": "",
             "team_name": "MRIxFields2026-Zhu",
             "type": "Task2",
