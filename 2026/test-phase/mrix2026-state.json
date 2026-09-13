@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-13 06:53:19",
+    "update_time": "2026-09-13 08:00:00",
     "data": {
         "5": {
             "status": "scored",
@@ -443,7 +443,7 @@
             "final_submission": "Yes"
         },
         "117": {
-            "status": "debuging",
+            "status": "error",
             "comment": "MRIxFields2026 Admin` without `can edit` permission.",
             "team_name": "mripp",
             "type": "Task1",
@@ -452,7 +452,7 @@
             "final_submission": "Yes"
         },
         "118": {
-            "status": "debuging",
+            "status": "error",
             "comment": "MRIxFields2026 Admin` without `can edit` permission.",
             "team_name": "mripp",
             "type": "Task2",
@@ -461,7 +461,7 @@
             "final_submission": "Yes"
         },
         "119": {
-            "status": "debuging",
+            "status": "error",
             "comment": "MRIxFields2026 Admin` without `can edit` permission.",
             "team_name": "mripp",
             "type": "Task3",
