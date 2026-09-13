@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-13 10:35:56",
+    "update_time": "2026-09-13 14:32:23",
     "data": {
         "5": {
             "status": "scored",
@@ -758,7 +758,7 @@
             "final_submission": "Yes"
         },
         "164": {
-            "status": "infering",
+            "status": "infered",
             "comment": "",
             "team_name": "momentum",
             "type": "Task3",
