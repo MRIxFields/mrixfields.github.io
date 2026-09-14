@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-13 15:30:51",
+    "update_time": "2026-09-14 01:39:06",
     "data": {
         "5": {
             "status": "scored",
@@ -20,7 +20,7 @@
             "final_submission": "Yes"
         },
         "11": {
-            "status": "debuging",
+            "status": "error",
             "comment": "Failed, emial sent",
             "team_name": "starfighting",
             "type": "Task1",
@@ -29,7 +29,7 @@
             "final_submission": "Yes"
         },
         "12": {
-            "status": "debuging",
+            "status": "error",
             "comment": "Failed, email sent",
             "team_name": "starfighting",
             "type": "Task2",
@@ -38,7 +38,7 @@
             "final_submission": "Yes"
         },
         "13": {
-            "status": "debuging",
+            "status": "error",
             "comment": "Failed, email sent",
             "team_name": "starfighting",
             "type": "Task3",
@@ -606,7 +606,7 @@
         },
         "141": {
             "status": "debuging",
-            "comment": "mailed",
+            "comment": "mailed, resubmit required.",
             "team_name": "NVGen",
             "type": "Task2",
             "submit_time": "2026-09-11 07:01:18",
