@@ -1,5 +1,5 @@
 {
-    "update_time": "2026-09-14 01:39:06",
+    "update_time": "2026-09-15 02:10:17",
     "data": {
         "5": {
             "status": "scored",
@@ -46,15 +46,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "15": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "darus-cop",
-            "type": "Task3",
-            "submit_time": "2026-08-21 16:26:24",
-            "is_latest": true,
-            "final_submission": "No"
-        },
         "16": {
             "status": "scored",
             "comment": "",
@@ -63,24 +54,6 @@
             "submit_time": "2026-08-22 21:00:54",
             "is_latest": true,
             "final_submission": "Yes"
-        },
-        "17": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "simoth-cop",
-            "type": "Task3",
-            "submit_time": "2026-08-23 14:54:31",
-            "is_latest": true,
-            "final_submission": "No"
-        },
-        "18": {
-            "status": "scored",
-            "comment": "",
-            "team_name": "Wdebdt-cop",
-            "type": "Task3",
-            "submit_time": "2026-08-23 14:55:52",
-            "is_latest": true,
-            "final_submission": "No"
         },
         "19": {
             "status": "scored",
@@ -604,15 +577,6 @@
             "is_latest": true,
             "final_submission": "Yes"
         },
-        "141": {
-            "status": "debuging",
-            "comment": "mailed, resubmit required.",
-            "team_name": "NVGen",
-            "type": "Task2",
-            "submit_time": "2026-09-11 07:01:18",
-            "is_latest": true,
-            "final_submission": "Yes"
-        },
         "142": {
             "status": "scored",
             "comment": "",
@@ -763,6 +727,15 @@
             "team_name": "momentum",
             "type": "Task3",
             "submit_time": "2026-09-13 18:05:18",
+            "is_latest": true,
+            "final_submission": "Yes"
+        },
+        "165": {
+            "status": "infering",
+            "comment": "",
+            "team_name": "NVGen",
+            "type": "Task2",
+            "submit_time": "2026-09-15 01:04:37",
             "is_latest": true,
             "final_submission": "Yes"
         }
